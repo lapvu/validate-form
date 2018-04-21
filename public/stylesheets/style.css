@@ -1,0 +1,51 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 400px;
+  padding: 10px;
+}
+.container .box{
+  margin-bottom: 10px;
+  width: 100%;
+}
+.container .box label{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.container .box input{
+  display: block;
+  padding: 10px;
+  width: 100%;
+  border: solid #f1f1f1 2px;
+}
+.container input[type="submit"]{
+  padding: 15px;
+  position: absolute;
+  left: 45%;
+  border: none;
+  border-radius: 4px;
+  background: #ece9e9;
+  cursor: pointer;
+}
+.container .box span{
+  color: red;
+}
+@media only screen and (max-width: 600px) {
+.container{
+  width: 90%;
+} 
+.container .box input{
+  width: 90%;
+}
+.container input[type="submit"]{
+  position: absolute;
+  left: 35%;
+}
+}
